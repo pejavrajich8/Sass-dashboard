@@ -44,7 +44,9 @@
                 alt="profile-picture"
             /></a>
           </div>
-          <a href="/product.html"><span class="material-icons">grid_view</span></a>
+          <a href="product.html"
+            ><span class="material-icons">grid_view</span></a
+          >
           <a href="#"
             ><span class="material-symbols-outlined">shopping_cart</span></a
           >
@@ -63,7 +65,7 @@
       <main class="main-content">
         <h1>Dashboard</h1>
         <div class="container">
-          <div class="box1">
+          <div class="box1 selectable-box">
             <img
               src="img/eye-icon-png-viewed-accomms-10.png"
               alt="Total Views"
@@ -72,25 +74,39 @@
             <h2>8,402</h2>
             <p class="p-bottom">Views from 3rd May 2022</p>
           </div>
-          <div class="box2">
+          <div class="box2 selectable-box">
             <img src="img/7612818.png" alt="Total Products" />
             <p>Total Products</p>
             <h2>5,230</h2>
             <p class="p-bottom">+ Add New Product</p>
           </div>
-          <div class="box3">
+          <div class="box3 selectable-box">
             <img src="img/4366352.png" alt="Total Users" />
             <p>Total Users</p>
             <h2>4,425</h2>
             <p class="p-bottom">+ Add New Users</p>
           </div>
-          <div class="box4">
+          <div class="box4 selectable-box">
             <img src="img/82429-200.png" alt="Total Sells" />
             <p>Total Sells</p>
             <h2>1,024</h2>
             <p class="p-bottom">Sells from 3rd May 2022</p>
           </div>
         </div>
+        <script>
+          document.querySelectorAll(".selectable-box").forEach((box) => {
+            box.addEventListener("click", function () {
+              if (this.classList.contains("selected")) {
+                this.classList.remove("selected");
+              } else {
+                document
+                  .querySelectorAll(".selectable-box.selected")
+                  .forEach((b) => b.classList.remove("selected"));
+                this.classList.add("selected");
+              }
+            });
+          });
+        </script>
         <div class="container2">
           <div class="box5">
             <div class="box-header">
@@ -100,7 +116,6 @@
               <div>Sold</div>
               <div>View</div>
             </div>
-
             <div class="box-body1">
               <div class="d">1</div>
               <img
