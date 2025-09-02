@@ -31,7 +31,7 @@
 .box5,
 .box6 {
     flex: 1;
-    height: 480px;
+    height: 520px;
     background-color: white;
     border-radius: 8px;
 }
@@ -84,7 +84,7 @@ p{
     padding: 10px 20px 0 20px;
 }
 .box-header div{
-    font-size: 20px;
+    font-size: 24px;
     padding: 20px 15px;
     font-weight: bold;
 }
@@ -107,7 +107,7 @@ p{
     }
 }
 .box-body1 div{
-    font-size: 20px;
+    font-size: 24px;
     padding: 25px 15px;
 }
 .box-body{
@@ -126,7 +126,7 @@ p{
     }
 }
 .box-body div{
-    font-size: 20px;
+    font-size: 24px;
     padding: 25px 15px;
 }
 .adjust{
@@ -197,7 +197,7 @@ p{
 .graph{
   padding: 10px 0 0 20px;
 }
-@media (max-width: 1269px) {
+@media (max-width: 1330px) {
     .container2 {
         flex-direction: column;
     }
