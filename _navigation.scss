@@ -1,0 +1,66 @@
+@use 'variables' as v;
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border: 1px solid v.$third-color;
+    width: 45px;
+    background-color: white;
+}
+.top-icons, .bottom-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.bottom-icons {
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+.material-icons, .material-symbols-outlined {
+    cursor: pointer;
+    color: rgba(110, 105, 105, 0.884);
+    transition: color 0.2s;
+}
+.material-icons:hover, .material-icons.active, .material-symbols-outlined:hover, .material-symbols-outlined.activate {
+    color: v.$fourth-color;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile .material-symbols-outlined {
+  font-size: 30px;
+  color: v.$third-color;
+}
+@media (max-width: 600px) {
+    .top-icons, .bottom-icons {
+        display: none;
+    }
+    .left-side {
+       display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+.container-header {
+    display: flex;
+    height: calc(100vh - 80px);
+}
