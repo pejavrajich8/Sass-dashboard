@@ -1,7 +1,7 @@
-@mixin hover-effect($bg, $color: white) {
+@mixin hover-effect {
   &:hover {
-    background-color: $bg;
-    color: $color;
+    background-color: #589CFE;
+    color: white;
     cursor: pointer;
   }
 }
@@ -27,7 +27,7 @@
     border-radius: 8px;
     padding: 20px;
     
-    @include hover-effect(#589CFE);
+    @include hover-effect;
 }
 .selectable-box {
     cursor: pointer;
