@@ -27,9 +27,11 @@
   font-size: 16px;
   outline: none;
   padding-left: 48px;
-}
-#search-bar::placeholder {
+
+  #search-bar::placeholder {
     color: v.$third-color;
+}
+
 }
 #search-button {
   background-color: #333D47;

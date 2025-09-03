@@ -287,12 +287,10 @@ p {
   outline: none;
   padding-left: 48px;
 }
-
-#search-bar::-moz-placeholder {
+#search-bar #search-bar::-moz-placeholder {
   color: #E2E2E2;
 }
-
-#search-bar::placeholder {
+#search-bar #search-bar::placeholder {
   color: #E2E2E2;
 }
 
